@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF"/> <!-- Fill color putih -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/primary"/> <!-- Border warna oranye -->
+            <corners android:radius="4dp"/> <!-- Sudut melengkung -->
+        </shape>
+    </item>
+    <item android:right="8dp" android:top="8dp" android:bottom="8dp">
+        <bitmap
+            android:gravity="right|center_vertical"
+            android:src="@android:drawable/arrow_down_float" /> <!-- Panah dropdown -->
+    </item>
+</layer-list>

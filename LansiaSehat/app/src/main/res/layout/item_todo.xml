@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/primary">
+
+
+        <RelativeLayout
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="185dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            >
+
+
+                <TextView
+                    android:id="@+id/todoTitle"
+                    android:layout_width="271dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_toStartOf="@+id/todoCategory"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:maxLines="1"
+                    android:textColor="@color/primary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:text="Task Title" />
+
+                <TextView
+                    android:id="@+id/todoDescription"
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/todoTitle"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_medium"
+                    android:maxLines="1"
+                    android:textColor="@color/primary"
+                    android:textSize="17sp"
+                    tools:text="Task Subtitle" />
+
+                <TextView
+                    android:id="@+id/todoCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:ellipsize="end"
+                    android:layout_marginEnd="5dp"
+                    android:maxWidth="80dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/poppins_extrabold"
+                    android:textColor="@color/primary"
+                    android:textSize="16dp"
+                    tools:text="Category" />
+
+
+                <ImageView
+                    android:id="@+id/gambarKategori"
+                    android:layout_width="65dp"
+                    android:layout_height="64dp"
+                    android:layout_below="@+id/todoCategory"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="5dp"
+                    android:padding="8dp"
+                    android:src="@drawable/dumbell" />
+
+                <TextView
+                    android:id="@+id/textDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/todoDescription"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="15dp"
+                    android:contentDescription="Tanggal"
+                    android:fontFamily="@font/poppins_bold_italic"
+                    android:importantForAccessibility="yes"
+                    android:text="Tanggal"
+                    android:textColor="@color/primary"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/todoDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textDate"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="-25dp"
+                    android:layout_toEndOf="@+id/textDate"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/primary"
+                    android:textSize="16dp"
+                    android:visibility="visible"
+                    tools:text="22-12-2017" />
+
+                <TextView
+                    android:id="@+id/textTime"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textDate"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="13dp"
+                    android:contentDescription="Time"
+                    android:fontFamily="@font/poppins_bold_italic"
+                    android:importantForAccessibility="yes"
+                    android:text="Waktu"
+                    android:textColor="@color/primary"
+                    android:textSize="15sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/todoTime"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/todoDate"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="174dp"
+                    android:layout_toEndOf="@+id/textTime"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/primary"
+                    android:textSize="16dp"
+                    android:visibility="visible"
+                    tools:text="22:12" />
+
+                <ImageButton
+                    android:id="@+id/deleteButton"
+                    android:layout_width="40dp"
+                    android:layout_height="33dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="9dp"
+                    android:layout_toStartOf="@+id/editButton"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="trash"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/delete" />
+
+                <ImageButton
+                    android:id="@+id/editButton"
+                    android:layout_width="41dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="edit"
+                    android:importantForAccessibility="yes"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/edit" />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

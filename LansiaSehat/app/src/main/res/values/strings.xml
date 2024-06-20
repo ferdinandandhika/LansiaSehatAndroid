@@ -1,0 +1,368 @@
+<resources>
+    <string name="app_name">LansiaSehat</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="activity_hint">hint actiovyty</string>
+    <string name="ayo">Mulai</string>
+    <string name="deskripsi">Mulai Hidup Sehat dan jelajahi fitur-fitur kami sekarang.</string>
+
+    //Kategori
+    <string-array name="category_array">
+        <item>Olahraga</item>
+        <item>Makan</item>
+        <item>Minum Obat</item>
+        <item>Pergi</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="gambarcategory_array">
+        <item>@drawable/dumbell</item>
+        <item>@drawable/eat</item>
+        <item>@drawable/medicine</item>
+        <item>@drawable/go</item>
+        <item>@drawable/elder</item>
+    </string-array>
+
+    //Sesi Olahraga Array
+    <string-array name="gambarolahraga_array">
+        <item>@drawable/awal</item>
+        <item>@drawable/utama</item>
+        <item>@drawable/akhir</item>
+    </string-array>
+
+    //Nutrisi
+    <string-array name="gambarnutrisi_array">
+        <item>@drawable/b12</item>
+        <item>@drawable/calcium</item>
+        <item>@drawable/vitd</item>
+        <item>@drawable/magnesium</item>
+        <item>@drawable/serat</item>
+        <item>@drawable/lemak</item>
+        <item>@drawable/air</item>
+    </string-array>
+
+    //Penjelasan Nutrisi
+    <string-array name="penjelasannutrisi_array">
+        <item>Asupan makanan yang mengandung vitamin B12 dibutuhkan untuk mendorong pembentukan sel darah merah dan DNA. Untuk memenuhi kebutuhan nutrisi ini, cobalah mengonsumsi makanan yang kaya kandungan vitamin B12.</item>
+        <item>Asupan nutrisi yang satu ini memiliki peran yang cukup penting untuk tubuh. Salah satu manfaat kalsium yang penting adalah membangun dan menjaga kesehatan tubuh, sehingga risiko gangguan tulang pada lansia bisa dihindari.</item>
+        <item>Asupan nutrisi vitamin D bisa membantu meningkatkan efektivitas kalsium dalam menjaga kesehatan tulang, serta menurunkan risiko osteoporosis. Selain itu, vitamin D juga bisa membantu melindungi tubuh dari risiko berbagai penyakit, seperti kanker, diabetes tipe 1, serta penyakit autoimun.</item>
+        <item>Magnesium berperan penting dalam menjaga kesehatan tubuh. Asupan nutrisi ini bisa membantu menjaga imunitas, kesehatan jantung, serta kekuatan tulang.</item>
+        <item>Mengonsumsi makanan yang kaya serat membantu menjaga kesehatan sistem pencernaan.</item>
+        <item>Lansia disarankan untuk mengonsumsi makanan yang kaya akan kandungan lemak omega-3. Ada banyak manfaat yang didapat dari asupan nutrisi ini, termasuk menurunkan risiko penyakit rheumatoid arthritis. Selain itu, mampu memperlambat proses penuaan dan penurunan kemampuan melihat pada lansia.</item>
+        <item>Tubuh lansia tetap membutuhkan cukup banyak asupan air agar kinerja organ selalu terjaga. Untuk menghindari risiko penyakit, usahakan selalu mengonsumsi 8 gelas air atau setara dengan 2 liter air setiap hari.</item>
+    </string-array>
+
+    //Gambar Makanan b12
+    <string-array name="gambarmakanan_array">
+        <item>@drawable/b12</item>
+        <item>@drawable/calcium</item>
+        <item>@drawable/vitd</item>
+        <item>@drawable/magnesium</item>
+        <item>@drawable/serat</item>
+        <item>@drawable/lemak</item>
+        <item>@drawable/air</item>
+    </string-array>
+
+    //Judul Makanan
+    <string-array name="gambarb12_array">
+        <item>@drawable/ikan</item>
+        <item>@drawable/sapi</item>
+        <item>@drawable/ayam</item>
+        <item>@drawable/sereal</item>
+    </string-array>
+
+    //Judul b12
+    <string-array name="namab12_array">
+        <item>Salmon, tuna, sarden</item>
+        <item>Daging sapi</item>
+        <item>Ayam</item>
+        <item>Sereal</item>
+    </string-array>
+
+
+    //Judul Makanan calcium
+    <string-array name="gambarcalcium_array">
+        <item>@drawable/susu</item>
+        <item>@drawable/bayam</item>
+        <item>@drawable/jusjeruk</item>
+        <item>@drawable/ikan</item>
+    </string-array>
+
+    //Judul Calcium
+    <string-array name="namacalcium_array">
+        <item>Susu</item>
+        <item>Bayam</item>
+        <item>Jus Jeruk</item>
+        <item>Salmon</item>
+    </string-array>
+
+    //Judul Makanan vitd
+    <string-array name="gambarvitd_array">
+        <item>@drawable/egg</item>
+        <item>@drawable/susu</item>
+        <item>@drawable/jusjeruk</item>
+        <item>@drawable/ikan</item>
+    </string-array>
+
+    //Judul vitd
+    <string-array name="namavitd_array">
+        <item>Kuning Telur</item>
+        <item>Susu</item>
+        <item>Jus Jeruk</item>
+        <item>Makarel</item>
+    </string-array>
+
+    //Judul Makanan Magnesium
+    <string-array name="gambarmag_array">
+        <item>@drawable/kacang</item>
+        <item>@drawable/berasmerah</item>
+        <item>@drawable/bayam</item>
+        <item>@drawable/buncis</item>
+    </string-array>
+
+    //Judul magnesium
+    <string-array name="namamag_array">
+        <item>Kacang mete dan Almond</item>
+        <item>Beras merah</item>
+        <item>Bayam</item>
+        <item>Buncis</item>
+    </string-array>
+
+
+    //Judul Makanan Serat
+    <string-array name="gambarserat_array">
+        <item>@drawable/apel</item>
+        <item>@drawable/pisang</item>
+        <item>@drawable/brokoli</item>
+        <item>@drawable/buncis</item>
+        <item>@drawable/wortel</item>
+        <item>@drawable/roti</item>
+    </string-array>
+
+    //Judul serat
+    <string-array name="namaserat_array">
+        <item>Apel</item>
+        <item>Pisang</item>
+        <item>Brokoli</item>
+        <item>Buncis</item>
+        <item>Wortel</item>
+        <item>Roti gandum</item>
+    </string-array>
+
+    //Judul Omega
+    <string-array name="gambaromega_array">
+        <item>@drawable/alpukat</item>
+        <item>@drawable/zaitun</item>
+        <item>@drawable/ikan</item>
+        <item>@drawable/kacang</item>
+    </string-array>
+
+    //Judul Omega
+    <string-array name="namaomega_array">
+        <item>Alpukat</item>
+        <item>Minyak Zaitun</item>
+        <item>Salmon</item>
+        <item>Kenari. Biji Rami</item>
+    </string-array>
+
+    //Judul Omega
+    <string-array name="gambarair_array">
+        <item>@drawable/mineral</item>
+    </string-array>
+
+    //Judul Omega
+    <string-array name="namaair_array">
+        <item>Air Mineral</item>
+    </string-array>
+
+
+    //Pemanasan
+    <string-array name="gambarpemanasan_array">
+        <item>@drawable/peregangan</item>
+        <item>@drawable/peregangan2</item>
+        <item>@drawable/rotaspundak</item>
+        <item>@drawable/duduktorsolateral</item>
+        <item>@drawable/dudukrotasitorso</item>
+        <item>@drawable/duduktorsobungkuk</item>
+        <item>@drawable/angkatlutut</item>
+        <item>@drawable/satukakimelingkar</item>
+    </string-array>
+
+    //Set
+    <string-array name="listset_array">
+        <item>@drawable/set1</item>
+        <item>@drawable/set2</item>
+        <item>@drawable/set3</item>
+    </string-array>
+
+    //Detail Olahraga
+    <string-array name="detail_array">
+        <item>Peregangan Leher Kiri dan Kanan</item>
+        <item>Peregangan Leher Depan dan Belakang</item>
+        <item>Rotasi Bahu</item>
+        <item>Tikungan Tubuh Lateral Duduk</item>
+        <item>Rotasi Torso Duduk</item>
+        <item>Tikungan Tubuh Duduk</item>
+        <item>Berbaris Lutut Tinggi</item>
+        <item>Lingkaran Pinggul Satu Kaki</item>
+    </string-array>
+
+    //Detail Olahraga Pemanasan
+    <string-array name="definisiOlahraga">
+        <item>Perlahan mendekatkan telinga kanan ke bahu kanan dan tahan. Kemudian ulangi gerakan yang sama pada bagian kiri. Lakukan ini tiga kali di setiap sisi.</item>
+        <item>Perlahan dekatkan dagu ke dada dan tahan. Kemudian lihat ke langit-langit dengan dagu terangkat. Ulangi gerakan ini tiga kali.</item>
+        <item>Bawa tangan Anda ke samping dan selesaikan 10 putaran bahu ke depan, lalu 10 putaran ke belakang.</item>
+        <item>Duduklah di kursi Anda dan gerakkan tangan Anda ke samping. Jangkau ke kanan menuju lantai, lalu ke kiri. Selesaikan 7 hingga 10 jangkauan di setiap sisi.</item>
+        <item>Silangkan tangan Anda di depan tubuh dan putar ke kanan, lalu ke kiri. Selesaikan 10 rotasi di setiap sisi.</item>
+        <item>Letakkan tangan Anda di pangkuan dan buka sedikit kaki Anda. Kaitkan jari-jari Anda, dan raihlah ke lantai. Kembalilah dan ulangi sebanyak 4 kali.</item>
+        <item>Berdiri dan temukan keseimbangan Anda. Anda dapat memegang bagian belakang kursi Anda jika diperlukan. Mulailah berbaris di tempat. Selesaikan 12 gerakan lutut tinggi pada setiap kaki.</item>
+        <item>Remain standing and hold onto the back of your chair. Slightly lift one leg and start to move it in circles. Complete 12 leg circles on each side.</item>
+    </string-array>
+
+    //Detail Olahraga
+    <string-array name="definisiPendinginan">
+        <item>Duduklah di kursi Anda dan letakkan kaki Anda rata di lantai. Kaitkan jari-jari Anda dan rentangkan lengan ke arah langit-langit sambil menarik napas dalam-dalam. Kemudian turunkan kembali lengan ke bawah sambil menghembuskan napas. Ulangi gerakan tersebut sebanyak 5 kali.</item>
+        <item>Satukan kedua kaki Anda dan arahkan jari-jari kaki ke arah langit-langit. Geser tangan Anda ke bawah kaki sambil menjaga dagu tetap tegak dan melihat ke depan. Tahan selama 10 detik, lalu gerakkan tangan kembali ke atas kaki ke posisi awal. Ulangi gerakan tersebut 3 hingga 4 kali.</item>
+        <item>Letakkan satu tangan di dada dan tangan lainnya di perut. Tarik napas dalam-dalam dan hembuskan perlahan. Ulangi latihan pernapasan 5 hingga 10 kali.</item>
+        <item>Dekatkan tangan dalam posisi berdoa lalu tekuk perlahan dari kiri ke kanan. Selesaikan gerakan 10 hingga 15 kali.</item>
+        <item>Letakkan tangan kiri Anda di bahu kanan. Kemudian gunakan tangan kanan Anda untuk menarik siku secara perlahan ke arah tubuh Anda. Ganti sisi dan ulangi gerakan ini 10 hingga 20 kali pada setiap lengan.</item>
+        <item>Regangkan lengan Anda ke belakang seperti saat Anda bangun di pagi hari. Turunkan kembali lengan Anda dan goyangkan. Ulangi gerakan tersebut sebanyak 3 hingga 5 kali.</item>
+    </string-array>
+
+
+    //Pendingina judul
+    <string-array name="judulpendinginan_array">
+        <item>Bernapas dengan Angkat Bahu</item>
+        <item>Peregangan Hamstring Duduk</item>
+        <item>Serahkan Pernapasan Berfokus pada Tangan</item>
+        <item>Peregangan Pergelangan Tangan</item>
+        <item>Peregangan Bahu Lintas Tubuh</item>
+        <item>Selamat Pagi Peregangan</item>
+    </string-array>
+
+    //Judul Set1
+    <string-array name="judulset1_array">
+        <item>Angkat Bahu Lengan Lurus Saat Duduk</item>
+        <item>Roda Kemudi Lengan Lurus</item>
+        <item>Tekan Dada dengan Jangkauan Torso</item>
+        <item>Ketegangan Menarik</item>
+        <item>Tarikan Ketegangan X</item>
+        <item>Berdiri Lurus, Angkat Bahu Lengan</item>
+    </string-array>
+
+    //Gambar set1
+    <string-array name="gambarset1_array">
+        <item>@drawable/set1_1</item>
+        <item>@drawable/set1_2</item>
+        <item>@drawable/set1_3</item>
+        <item>@drawable/set1_4</item>
+        <item>@drawable/set1_5</item>
+        <item>@drawable/set1_6</item>
+    </string-array>
+
+    //Definisi set1
+    <string-array name="definisiset1_array">
+        <item>Pegang handuk Anda di setiap ujungnya. Mulailah dari lutut dan angkat handuk di atas kepala, pertahankan ketegangan pada handuk. Kemudian turunkan kembali. Ulangi gerakan tersebut sebanyak 10 kali.</item>
+        <item>Pegang handuk Anda erat-erat di setiap ujungnya. Jaga ketegangan pada handuk dan putar dari kiri ke kanan. Ulangi gerakan tersebut sebanyak 8 kali pada setiap arah</item>
+        <item>Pegang handuk Anda erat-erat di setiap ujungnya. Bawa handuk Anda ke dada dan jangkau ke depan sejauh yang Anda bisa. Kemudian luruskan kembali ke posisi awal. Ulangi gerakan ini 10 hingga 15 kali. Anda bisa melakukan latihan ini sambil berdiri atau duduk.</item>
+        <item>Bawa handuk Anda ke depan dan tarik dengan kuat seolah-olah Anda mencoba merobeknya menjadi dua. Bawa tangan Anda kembali bersama-sama, lalu tarik kembali. Ulangi gerakan ini 10 hingga 15 kali.</item>
+        <item>Bekerja dalam gerakan gaya X, putar dan tarik handuk Anda ke atas dan ke bawah. Ulangi gerakan ini 10 hingga 15 kali.</item>
+        <item>Pegang handuk Anda di setiap ujungnya, tarik dengan kuat sambil Anda menjangkau setinggi mungkin. Kemudian turunkan kembali lengan Anda. Ulangi gerakan ini 10 hingga 15 kali.</item>
+    </string-array>
+
+    //Set2
+    <string-array name="judulset2_array">
+        <item>Angkat Bahu Depan</item>
+        <item>Bicep Curl dengan Tekan Bahu</item>
+        <item>Angkat Bahu Lateral</item>
+        <item>Ekstensi Trisep Overhead</item>
+        <item>Ekstensi Trisep Pemain Ski</item>
+        <item>Bicep Curl Bergantian</item>
+    </string-array>
+
+    //Gambar set2
+    <string-array name="gambarset2_array">
+        <item>@drawable/set2_1</item>
+        <item>@drawable/set2_2</item>
+        <item>@drawable/set2_3</item>
+        <item>@drawable/set2_4</item>
+        <item>@drawable/set2_5</item>
+        <item>@drawable/set2_6</item>
+    </string-array>
+
+    //Definisi set2
+    <string-array name="definisiset2_array">
+        <item>Pegang dua botol air berisi air di depan paha Anda, lalu raih ke atas dan ke bawah. Ulangi gerakan tersebut 10 hingga 15 kali.</item>
+        <item>Pegang dua botol air di depan paha dengan telapak tangan menghadap keluar. Angkat botol ke arah bahu, lalu putar pergelangan tangan sehingga telapak tangan menghadap keluar. Dorong ke atas menuju langit-langit. Turunkan kembali ke  dan putar pergelangan tangan sehingga telapak tangan menghadap ke dalam. Turunkan kembali ke posisi awal. Ulangi gerakan ini 12 kali.</item>
+        <item>Pegang botol air di samping tubuh. Angkat perlahan lengan ke samping (tidak lebih tinggi dari bahu). Kemudian turunkan kembali. Ulangi gerakan ini 12 hingga 15 kali.</item>
+        <item>Pegang botol air di setiap tangan, angkat lengan ke belakang telinga dan turunkan tangan. Arahkan siku ke atas setinggi mungkin dan luruskan lengan ke arah langit-langit. Kemudian turunkan kembali. Ulangi gerakan ini 6 hingga 10 kali.</item>
+        <item>Pegang botol air di setiap tangan, angkat tangan hingga dekat ketiak, lalu dorong lengan ke belakang. Ulangi gerakan ini 6 hingga 10 kali.</item>
+        <item>Pegang botol air di setiap tangan, lakukan satu set angkat beban bergantian pada kedua lengan. Ulangi gerakan ini 20 hingga 25 kali pada setiap lengan.</item>
+    </string-array>
+
+    //Set3
+    <string-array name="judulset3_array">
+        <item>Pergeseran Berat Badan ke Samping</item>
+        <item>Lutut Kekuatan Kuda-kuda Terhuyung</item>
+        <item>Tikungan Samping</item>
+        <item>Fleksi Pinggul Lateral Satu Kaki</item>
+        <item>Kaki Berdiri</item>
+    </string-array>
+
+    //Gambar set3
+    <string-array name="gambarset3_array">
+        <item>@drawable/set3_1</item>
+        <item>@drawable/set3_2</item>
+        <item>@drawable/set3_3</item>
+        <item>@drawable/set3_4</item>
+        <item>@drawable/set3_5</item>
+    </string-array>
+
+    //Definisi set3
+    <string-array name="definisiset3_array">
+        <item>Berdirilah di belakang kursi, gunakan kursi sebagai penyangga. Posisikan kaki sedikit lebih lebar dari lebar bahu dan mulailah menggeser berat badan dari kiri ke kanan. Saat bergeser dari sisi ke sisi, satu kaki akan ditekuk sementara kaki lainnya lurus. Lakukan 10 hingga 15 repetisi pada setiap kaki.</item>
+        <item>Berdirilah di satu sisi kursi dan pegang kursi untuk menjaga keseimbangan. Langkahkan kaki kanan ke belakang, lalu angkat lutut hingga sejajar dengan pinggang. Turunkan kaki kembali dan ulangi. Lakukan gerakan ini 10 kali pada sisi kanan. Kemudian, pindahlah ke sisi lain kursi dan ulangi gerakan 10 kali pada kaki kiri.</item>
+        <item>Berdirilah di belakang kursi dengan kaki rapat. Letakkan tangan kanan di belakang kursi untuk menyeimbangkan diri. Angkat tangan kiri setinggi mungkin, lalu perlahan-lahan tekuk ke kanan. Tahan posisi selama 10 hingga 20 detik. Kemudian ganti sisi. Lakukan gerakan ini beberapa kali di setiap sisi.</item>
+        <item>Posisikan kaki dengan lebar yang nyaman saat berdiri di belakang kursi. Pegang kursi dan pindahkan berat badan ke kaki kanan. Angkat kaki kiri dan tahan selama 5 detik. Ulangi pada kaki lainnya. Lakukan gerakan ini 2 hingga 3 kali.</item>
+        <item>Berdirilah di belakang kursi dengan kaki rapat. Angkat tumit Anda sejauh mungkin dan tahan posisi tersebut selama 10 hingga 20 detik. Ulangi gerakan ini 2 hingga 3 kali.</item>
+    </string-array>
+
+    //Pendinginan
+    <string-array name="listpendinginan_array">
+        <item>@drawable/bernapaspundak</item>
+        <item>@drawable/dudukhamstring</item>
+        <item>@drawable/tanganfokus</item>
+        <item>@drawable/pegelangantangan</item>
+        <item>@drawable/tubuhmenyilang</item>
+        <item>@drawable/selamatpagi</item>
+    </string-array>
+
+    //Onboarding
+    <string name="title_onboarding_1">Selamat Datang di Lansia Sehat</string>
+    <string name="description_onboarding_1">Aplikasi yang mendukung kesehatan dan kemandirian anda. Mulai perjalanan sehat anda bersama kami.</string>
+
+    <string name="title_onboarding_2">Tips Pola Hidup Sehat</string>
+    <string name="description_onboarding_2">Aktivitas harian yang mendukung kesehatan anda. Cara-cara sederhana untuk hidup lebih sehat dan aktif.</string>
+
+    <string name="title_onboarding_3">Pengingat Kesehatan</string>
+    <string name="description_onboarding_3">Jadwal makan, minum obat, dan waktu olahraga. Bantu menjaga rutinitas harian yang sehat.</string>
+
+    <string name="title_onboarding_4">Penghitung BMI</string>
+    <string name="description_onboarding_4">Pantau berat badan anda secara berkala. Kelola berat badan sesuai dengan kondisi kesehatan.</string>
+
+    <string name="title_onboarding_5">Desain Ramah Lansia</string>
+    <string name="description_onboarding_5">Font besar dan tata letak sederhana. Navigasi mudah untuk kenyamanan Anda.</string>
+    <string name="simpan">Simpan</string>
+    <string name="judul">Judul Pengingat</string>
+    <string name="lakukan">Apa yang perlu dilakukan</string>
+    <string name="waktutanggal">Pengingat Waktu dan Jam</string>
+    <string name="kategori">Kategori</string>
+    <string name="buat">Buat rencana anda</string>
+    <string name="kategori_gambar">gambar</string>
+    <string name="back">back</string>
+    <string name="empty_description">kosong</string>
+    <string name="title_pengingat">Pengingat</string>
+    <string name="title_bmi">BMI</string>
+
+</resources>

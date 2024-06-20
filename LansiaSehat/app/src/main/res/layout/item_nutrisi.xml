@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardMudah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/item1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/detail_image_view"
+                android:layout_width="93dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="gambar"
+                android:padding="8dp"
+                android:src="@drawable/pemanasan" />
+
+            <TextView
+                android:id="@+id/detail_text_view"
+                android:layout_width="192dp"
+                android:layout_height="83dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_toStartOf="@+id/imageView4"
+
+                android:layout_toEndOf="@+id/detail_image_view"
+                android:contentDescription="mudah"
+                android:fontFamily="@font/poppins_extrabold"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/primary"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>

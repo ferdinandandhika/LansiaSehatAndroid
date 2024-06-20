@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|left"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:id="@+id/container"
+    tools:context=".ui.bmi.BmiFragment"
+    android:background="@color/background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="BMI Lansia Sehat"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold_italic"
+            android:textColor="@color/primary"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppins_bold_italic"
+        android:gravity="left"
+        android:text="Isilah informasi anda:"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:columnCount="3">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/weightt"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Berat(kg)" />
+
+        <EditText
+            android:id="@+id/weightEDTX"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Berat anda"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:visibility="invisible" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:visibility="invisible" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:visibility="invisible" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/big"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Tinggi(cm)" />
+
+        <EditText
+            android:id="@+id/heightEDTX"
+
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Tinggi anda"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue_selector"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:layout_gravity="center"
+        android:text="HITUNG BMI"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "541076124483",
+    "project_id": "lansiasehat-5042",
+    "storage_bucket": "lansiasehat-5042.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541076124483:android:943d135c21ac82e4f635f6",
+        "android_client_info": {
+          "package_name": "com.example.lansiasehat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf5jutu5FR17cUFEyII56NP4U-v01Nv3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

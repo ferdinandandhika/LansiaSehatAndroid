@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Spinner
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.room.Room
 import com.example.lansiasehat.R
@@ -140,6 +141,15 @@ class RencanaActivity : AppCompatActivity() {
         val date = dateEditText.text.toString()
         val time = timeEditText.text.toString()
         val category = categorySpinner.selectedItem.toString()
+
+        // Validasi input
+        if (title.isEmpty() || description.isEmpty() || date.isEmpty() || time.isEmpty()) {
+            // Tampilkan pesan kesalahan
+            runOnUiThread {
+                Toast.makeText(this@RencanaActivity, "Semua kolom harus diisi", Toast.LENGTH_SHORT).show()
+            }
+            return
+        }
 
         val todo = Todo(
             id = todoId ?: 0,

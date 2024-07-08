@@ -40,13 +40,6 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
-
-        val quizCard: CardView = binding.kuis
-        quizCard.setOnClickListener {
-            val intent = Intent(requireContext(), KuisActivity::class.java)
-            startActivity(intent)
-        }
-
         val tutorialCard: CardView = binding.tutorial
         tutorialCard.setOnClickListener {
             val intent = Intent(requireContext(), TutorialActivity::class.java)

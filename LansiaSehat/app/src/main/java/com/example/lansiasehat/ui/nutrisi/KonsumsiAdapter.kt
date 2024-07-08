@@ -12,33 +12,33 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lansiasehat.R
 
-class NutrisiAdapter(
+class KonsumsiAdapter(
     private val context: Context,
-    private val gambarNutrisi: IntArray,
-    private val judulNutrisi: Array<String>
-) : RecyclerView.Adapter<NutrisiAdapter.NutrisiViewHolder>(), Filterable {
+    private val gambarKonsumsi: IntArray,
+    private val judulKonsumsi: Array<String>
+) : RecyclerView.Adapter<KonsumsiAdapter.KonsumsiViewHolder>(), Filterable {
 
-    private var filteredGambarNutrisi: IntArray = gambarNutrisi
-    private var filteredJudulNutrisi: Array<String> = judulNutrisi
+    private var filteredGambarKonsumsi: IntArray = gambarKonsumsi
+    private var filteredJudulKonsumsi: Array<String> = judulKonsumsi
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NutrisiViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KonsumsiViewHolder {
         val view = LayoutInflater.from(context).inflate(R.layout.item_nutrisi, parent, false)
-        return NutrisiViewHolder(view)
+        return KonsumsiViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: NutrisiViewHolder, position: Int) {
-        holder.imageView.setImageResource(filteredGambarNutrisi[position])
-        holder.textView.text = filteredJudulNutrisi[position]
+    override fun onBindViewHolder(holder: KonsumsiViewHolder, position: Int) {
+        holder.imageView.setImageResource(filteredGambarKonsumsi[position])
+        holder.textView.text = filteredJudulKonsumsi[position]
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(context, DetailNutrisiActivity::class.java).apply {
-                putExtra("NUTRISI_ID", position)
+            val intent = Intent(context, DetailKonsumsiActivity::class.java).apply {
+                putExtra("KONSUMSI_ID", position)
             }
             context.startActivity(intent)
         }
     }
 
-    override fun getItemCount(): Int = filteredGambarNutrisi.size
+    override fun getItemCount(): Int = filteredGambarKonsumsi.size
 
     override fun getFilter(): Filter {
         return object : Filter() {
@@ -47,12 +47,12 @@ class NutrisiAdapter(
                 val filterResults = FilterResults()
 
                 if (query.isNullOrEmpty()) {
-                    filterResults.values = Pair(gambarNutrisi, judulNutrisi)
+                    filterResults.values = Pair(gambarKonsumsi, judulKonsumsi)
                 } else {
-                    val filteredList = judulNutrisi.withIndex().filter {
+                    val filteredList = judulKonsumsi.withIndex().filter {
                         it.value.toLowerCase().contains(query)
                     }.map {
-                        Pair(gambarNutrisi[it.index], it.value)
+                        Pair(gambarKonsumsi[it.index], it.value)
                     }
 
                     filterResults.values = Pair(
@@ -66,14 +66,14 @@ class NutrisiAdapter(
 
             override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
                 val (filteredGambar, filteredJudul) = results?.values as Pair<IntArray, Array<String>>
-                filteredGambarNutrisi = filteredGambar
-                filteredJudulNutrisi = filteredJudul
+                filteredGambarKonsumsi = filteredGambar
+                filteredJudulKonsumsi = filteredJudul
                 notifyDataSetChanged()
             }
         }
     }
 
-    class NutrisiViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class KonsumsiViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.detail_image_view)
         val textView: TextView = itemView.findViewById(R.id.detail_text_view)
     }

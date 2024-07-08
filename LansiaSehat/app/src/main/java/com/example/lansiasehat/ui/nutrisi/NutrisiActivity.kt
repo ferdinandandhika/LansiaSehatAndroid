@@ -1,12 +1,13 @@
 package com.example.lansiasehat.ui.nutrisi
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lansiasehat.R
-import com.example.lansiasehat.ui.olahraga.OlahragaAdapter
 
 class NutrisiActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,14 +22,21 @@ class NutrisiActivity : AppCompatActivity() {
         }
         typedArray.recycle()
 
-        val adapter = NutrisiAdapter(this, gambarNutrisi)
+        val judulNutrisi = resources.getStringArray(R.array.judulnutrisi_array)
+
+        val adapter = NutrisiAdapter(this, gambarNutrisi, judulNutrisi)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
-
 
         val backButton = findViewById<ImageView>(R.id.back_button)
         backButton.setOnClickListener {
             finish()
+        }
+
+        val cardView = findViewById<CardView>(R.id.cardView)
+        cardView.setOnClickListener {
+            val intent = Intent(this, KonsumsiActivity::class.java)
+            startActivity(intent)
         }
     }
 }

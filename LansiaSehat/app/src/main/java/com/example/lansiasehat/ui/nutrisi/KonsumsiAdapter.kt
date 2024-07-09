@@ -31,8 +31,9 @@ class KonsumsiAdapter(
         holder.textView.text = filteredJudulKonsumsi[position]
 
         holder.itemView.setOnClickListener {
+            val originalPosition = gambarKonsumsi.indexOf(filteredGambarKonsumsi[position])
             val intent = Intent(context, DetailKonsumsiActivity::class.java).apply {
-                putExtra("KONSUMSI_ID", position)
+                putExtra("KONSUMSI_ID", originalPosition)
             }
             context.startActivity(intent)
         }
@@ -43,18 +44,19 @@ class KonsumsiAdapter(
     override fun getFilter(): Filter {
         return object : Filter() {
             override fun performFiltering(constraint: CharSequence?): FilterResults {
-                val query = constraint?.toString()?.toLowerCase()?.trim()
+                val query = constraint?.toString()?.lowercase() ?: ""
                 val filterResults = FilterResults()
 
-                if (query.isNullOrEmpty()) {
+                if (query.isEmpty()) {
                     filterResults.values = Pair(gambarKonsumsi, judulKonsumsi)
                 } else {
-                    val filteredList = judulKonsumsi.withIndex().filter {
-                        it.value.toLowerCase().contains(query)
-                    }.map {
-                        Pair(gambarKonsumsi[it.index], it.value)
+                    val filteredList = judulKonsumsi.mapIndexedNotNull { index, title ->
+                        if (title.lowercase().contains(query)) {
+                            Pair(gambarKonsumsi[index], title)
+                        } else {
+                            null
+                        }
                     }
-
                     filterResults.values = Pair(
                         filteredList.map { it.first }.toIntArray(),
                         filteredList.map { it.second }.toTypedArray()

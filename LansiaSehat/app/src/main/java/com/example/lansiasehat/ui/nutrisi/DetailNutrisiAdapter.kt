@@ -1,6 +1,7 @@
 package com.example.lansiasehat.ui.nutrisi
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +13,8 @@ import com.example.lansiasehat.R
 class DetailNutrisiAdapter(
     private val context: Context,
     private val detailList: List<Pair<Int, String>>,
-    private val itemLayoutResId: Int
+    private val itemLayoutResId: Int,
+    private val konsumsiIdOffset: Int // Added offset to send the correct position
 ) : RecyclerView.Adapter<DetailNutrisiAdapter.DetailViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetailViewHolder {
@@ -24,6 +26,13 @@ class DetailNutrisiAdapter(
         val (imageResId, name) = detailList[position]
         holder.detailImageView.setImageResource(imageResId)
         holder.detailTextView.text = name
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, DetailKonsumsiActivity::class.java).apply {
+                putExtra("KONSUMSI_ID", position + konsumsiIdOffset)
+            }
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = detailList.size

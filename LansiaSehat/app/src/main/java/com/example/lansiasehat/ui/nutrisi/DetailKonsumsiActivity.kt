@@ -48,7 +48,7 @@ class DetailKonsumsiActivity : AppCompatActivity() {
         backButton.setOnClickListener {
             finish()
         }
-
+ 
         sumberView.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.myfitnesspal.com/nutrition-facts-calories"))
             startActivity(intent)

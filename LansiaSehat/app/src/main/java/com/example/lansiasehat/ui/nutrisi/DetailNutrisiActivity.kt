@@ -16,9 +16,8 @@ class DetailNutrisiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_nutrisi)
 
-
         val nutrisiId = intent.getIntExtra("NUTRISI_ID", -1)
-        var btnHalodoc = findViewById<TextView>(R.id.halodoc)
+        val btnHalodoc = findViewById<TextView>(R.id.halodoc)
         val imageView = findViewById<ImageView>(R.id.player_view)
         val textView = findViewById<TextView>(R.id.penjelasan)
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view_detail_nutrisi)
@@ -40,20 +39,21 @@ class DetailNutrisiActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
-            val detailList = when (nutrisiId) {
-                0 -> getDetailList(R.array.gambarb12_array, R.array.namab12_array)
-                1 -> getDetailList(R.array.gambarcalcium_array, R.array.namacalcium_array)
-                2 -> getDetailList(R.array.gambarvitd_array, R.array.namavitd_array)
-                3 -> getDetailList(R.array.gambarmag_array, R.array.namamag_array)
-                4 -> getDetailList(R.array.gambarserat_array, R.array.namaserat_array)
-                5 -> getDetailList(R.array.gambaromega_array, R.array.namaomega_array)
-                6 -> getDetailList(R.array.gambarair_array, R.array.namaair_array)
-                else -> emptyList()
+            val (detailList, konsumsiIdOffset) = when (nutrisiId) {
+                0 -> getDetailList(R.array.gambarb12_array, R.array.namab12_array) to 0
+                1 -> getDetailList(R.array.gambarcalcium_array, R.array.namacalcium_array) to 4
+                2 -> getDetailList(R.array.gambarvitd_array, R.array.namavitd_array) to 6
+                3 -> getDetailList(R.array.gambarmag_array, R.array.namamag_array) to 8
+                4 -> getDetailList(R.array.gambarserat_array, R.array.namaserat_array) to 12
+                5 -> getDetailList(R.array.gambaromega_array, R.array.namaomega_array) to 18
+                6 -> getDetailList(R.array.gambarair_array, R.array.namaair_array) to 22
+                else -> emptyList<Pair<Int, String>>() to 0
             }
 
             recyclerView.layoutManager = LinearLayoutManager(this)
-            recyclerView.adapter = DetailNutrisiAdapter(this, detailList, R.layout.item_nutrisi)
+            recyclerView.adapter = DetailNutrisiAdapter(this, detailList, R.layout.item_nutrisi, konsumsiIdOffset)
         }
+
         val backButton = findViewById<ImageView>(R.id.back_button)
         backButton.setOnClickListener {
             finish()

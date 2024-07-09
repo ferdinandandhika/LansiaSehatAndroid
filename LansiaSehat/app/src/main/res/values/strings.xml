@@ -85,7 +85,7 @@
 
     //Judul b12
     <string-array name="namab12_array">
-        <item>Salmon, tuna, sarden</item>
+        <item>Tuna dan Sarden</item>
         <item>Daging sapi</item>
         <item>Ayam</item>
         <item>Sereal</item>
@@ -95,32 +95,24 @@
     //Judul Makanan calcium
     <string-array name="gambarcalcium_array">
         <item>@drawable/susu</item>
-        <item>@drawable/bayam</item>
         <item>@drawable/jusjeruk</item>
-        <item>@drawable/ikan</item>
     </string-array>
 
     //Judul Calcium
     <string-array name="namacalcium_array">
         <item>Susu</item>
-        <item>Bayam</item>
         <item>Jus Jeruk</item>
-        <item>Salmon</item>
     </string-array>
 
     //Judul Makanan vitd
     <string-array name="gambarvitd_array">
         <item>@drawable/egg</item>
-        <item>@drawable/susu</item>
-        <item>@drawable/jusjeruk</item>
         <item>@drawable/ikan</item>
     </string-array>
 
     //Judul vitd
     <string-array name="namavitd_array">
         <item>Kuning Telur</item>
-        <item>Susu</item>
-        <item>Jus Jeruk</item>
         <item>Makarel</item>
     </string-array>
 
@@ -187,16 +179,15 @@
         <item>Air Mineral</item>
     </string-array>
 
-
-    //Konsumsi Gambar
+//Konsumsi
     <string-array name="gambarkonsumsi_array">
         <item>@drawable/ikan</item>
         <item>@drawable/sapi</item>
         <item>@drawable/ayam</item>
         <item>@drawable/sereal</item>
-        <item>@drawable/egg</item>
         <item>@drawable/susu</item>
         <item>@drawable/jusjeruk</item>
+        <item>@drawable/egg</item>
         <item>@drawable/ikan</item>
         <item>@drawable/kacang</item>
         <item>@drawable/berasmerah</item>
@@ -226,14 +217,15 @@
     </string-array>
 
     //Konsumsi nama
+    <!-- Judul Array -->
     <string-array name="judulkonsumsi_array">
         <item>Tuna dan sarden</item>
         <item>Daging sapi</item>
         <item>Ayam</item>
         <item>Sereal</item>
-        <item>Kuning Telur</item>
         <item>Susu</item>
         <item>Jus Jeruk</item>
+        <item>Kuning Telur</item>
         <item>Makarel</item>
         <item>Kacang mete</item>
         <item>Beras merah</item>
@@ -262,40 +254,41 @@
         <item>Mangga</item>
     </string-array>
 
+    <!-- Deskripsi Array -->
     <string-array name="deskripsikonsumsi_array">
-        <item>Tuna dam sarden adalah sumber protein dan asam lemak omega-3 yang penting untuk kesehatan jantung dan otak.</item>
-        <item>Daging sapi adalah sumber protein hewani tinggi yang juga mengandung zat besi, zinc, dan vitamin B kompleks untuk metabolisme dan pertumbuhan sel.</item>
-        <item>Ayam adalah sumber protein rendah lemak yang mengandung berbagai vitamin dan mineral, termasuk vitamin B6 dan selenium untuk fungsi kekebalan tubuh yang sehat.</item>
-        <item>Sereal, seperti oatmeal atau sereal gandum utuh, adalah sumber karbohidrat kompleks, serat, dan beberapa vitamin dan mineral yang bermanfaat untuk kesehatan pencernaan dan energi.</item>
-        <item>Kuning Telur adalah sumber protein tinggi dan mengandung vitamin D, vitamin B12, serta lemak sehat yang penting untuk fungsi sel dan jaringan tubuh.</item>
-        <item>Susu mengandung kalsium, vitamin D, protein, dan riboflavin yang penting untuk pertumbuhan tulang dan kesehatan otot.</item>
-        <item>Jus Jeruk adalah sumber vitamin C yang kaya serta antioksidan lainnya yang mendukung sistem kekebalan tubuh dan kesehatan kulit.</item>
-        <item>Makarel adalah sumber protein dan asam lemak omega-3 yang membantu mengurangi risiko penyakit jantung dan mendukung fungsi otak yang sehat.</item>
-        <item>Kacang mete adalah sumber protein nabati, serat, dan lemak sehat yang bermanfaat untuk kesehatan jantung dan metabolisme tubuh.</item>
-        <item>Beras merah adalah sumber karbohidrat kompleks, serat, dan sejumlah kecil protein yang membantu menjaga kesehatan pencernaan dan energi stabil.</item>
-        <item>Bayam adalah sumber serat, vitamin A, vitamin C, dan zat besi yang penting untuk kesehatan mata, kulit, dan sistem kekebalan tubuh.</item>
-        <item>Buncis adalah sumber serat, protein nabati, dan sejumlah vitamin dan mineral yang bermanfaat untuk kesehatan pencernaan dan metabolisme tubuh.</item>
-        <item>Apel mengandung serat, vitamin C, dan antioksidan lainnya yang mendukung kesehatan jantung, pencernaan, dan mengurangi risiko penyakit kronis.</item>
-        <item>Pisang adalah sumber kalium, serat, vitamin C, dan vitamin B6 yang penting untuk kesehatan jantung, pencernaan, dan menjaga energi tubuh.</item>
-        <item>Brokoli mengandung serat, vitamin K, vitamin C, dan antioksidan lainnya yang mendukung kesehatan tulang, kekebalan tubuh, dan proses anti-penuaan.</item>
-        <item>Buncis adalah sumber serat yang tinggi, serta mengandung protein nabati, vitamin K, dan berbagai mineral untuk kesehatan tulang dan pencernaan.</item>
-        <item>Wortel mengandung beta-karoten, serat, vitamin K1, dan potassium yang penting untuk kesehatan mata, kulit, dan menjaga tekanan darah.</item>
-        <item>Roti gandum adalah sumber karbohidrat kompleks, serat, dan sejumlah vitamin dan mineral yang bermanfaat untuk kesehatan pencernaan dan energi stabil.</item>
-        <item>Alpukat adalah sumber lemak sehat, serat, vitamin E, dan potassium yang penting untuk kesehatan jantung, otak, dan pengurangan peradangan.</item>
-        <item>Minyak Zaitun mengandung lemak tak jenuh tunggal yang sehat, antioksidan, dan vitamin E yang bermanfaat untuk kesehatan jantung dan anti-penuaan.</item>
-        <item>Salmon adalah sumber protein tinggi dan asam lemak omega-3 yang penting untuk kesehatan jantung, otak, dan mengurangi peradangan dalam tubuh.</item>
-        <item>Biji Kenari dan Rami adalah sumber lemak sehat, serat, dan protein nabati yang bermanfaat untuk kesehatan jantung, pencernaan, dan energi tubuh.</item>
-        <item>Air Mineral penting untuk menjaga hidrasi tubuh dan mendukung fungsi organ-organ penting dalam tubuh.</item>
-        <item>Tahu adalah sumber protein nabati yang baik, yang penting untuk pertumbuhan dan perbaikan jaringan tubuh. Tahu juga mengandung zat besi dan kalsium dalam jumlah tertentu.</item>
-        <item>Tempe mengandung protein, serat, dan vitamin B kompleks, yang penting untuk energi dan metabolisme tubuh. Tempe juga mengandung zat besi, kalsium, dan berbagai mineral penting lainnya.</item>
-        <item>Ubi adalah sumber karbohidrat kompleks yang baik, serat, dan vitamin A. Mereka juga mengandung kalium, yang membantu mengatur tekanan darah dan menjaga keseimbangan elektrolit dalam tubuh.</item>
-        <item>Pepaya kaya akan vitamin C dan vitamin A, yang keduanya penting untuk sistem kekebalan tubuh dan kesehatan mata. Pepaya juga mengandung enzim pencernaan papain, yang dapat membantu pencernaan.</item>
-        <item>Jagung mengandung serat, vitamin C, dan karotenoid seperti lutein dan zeaxanthin, yang penting untuk kesehatan mata. Jagung juga merupakan sumber karbohidrat yang baik.</item>
-        <item>Anggur kaya akan antioksidan, terutama resveratrol, yang bermanfaat untuk kesehatan jantung. Anggur juga mengandung vitamin C, vitamin K, dan berbagai mineral.</item>
-        <item>Semangka kaya akan air dan mengandung vitamin C serta vitamin A. Semangka juga mengandung antioksidan seperti likopen, yang bermanfaat untuk melindungi sel-sel tubuh dari kerusakan.</item>
-        <item>Timun mengandung banyak air dan serat, yang membantu menjaga hidrasi tubuh dan kesehatan pencernaan. Timun juga rendah kalori dan mengandung vitamin dan mineral yang bermanfaat.</item>
-        <item>Kol adalah sumber serat yang baik, yang membantu pencernaan dan menjaga kesehatan jantung. Kol juga mengandung vitamin C dan K, serta beberapa mineral.</item>
-        <item>Mangga adalah buah tropis yang kaya akan vitamin C, vitamin A, dan serat. Mangga juga mengandung sejumlah mineral seperti potassium dan magnesium.</item>
+        <item>Ikan tuna dan sarden merupakan sumber protein hewani yang kaya akan omega-3, baik untuk kesehatan jantung dan otak.</item>
+        <item>Daging sapi mengandung protein tinggi dan zat besi, penting untuk pembentukan otot dan kesehatan darah.</item>
+        <item>Ayam adalah sumber protein rendah lemak, cocok untuk diet sehat dan membangun otot.</item>
+        <item>Sereal seperti oat atau gandum utuh kaya serat dan vitamin, baik untuk pencernaan dan energi stabil.</item>
+        <item>Susu mengandung kalsium, protein, dan vitamin D, penting untuk kesehatan tulang dan gigi.</item>
+        <item>Jus jeruk segar kaya akan vitamin C, antioksidan yang baik untuk sistem kekebalan tubuh.</item>
+        <item>Kuning telur mengandung protein, vitamin D, dan lemak sehat, penting untuk pembentukan sel-sel tubuh.</item>
+        <item>Makarel adalah ikan berlemak tinggi yang mengandung omega-3, baik untuk kesehatan jantung dan otak.</item>
+        <item>Kacang mete kaya akan protein, serat, dan lemak tak jenuh ganda, membantu menurunkan kolesterol.</item>
+        <item>Beras merah mengandung serat tinggi dan nutrisi penting lainnya, baik untuk pencernaan dan kontrol gula darah.</item>
+        <item>Bayam rendah kalori dan mengandung vitamin A, C, dan K, baik untuk penglihatan dan kesehatan kulit.</item>
+        <item>Buncis mengandung serat, protein, dan zat besi, penting untuk kesehatan pencernaan dan metabolisme.</item>
+        <item>Apel mengandung serat larut dan antioksidan, baik untuk kesehatan jantung dan menurunkan risiko diabetes.</item>
+        <item>Pisang kaya akan kalium dan vitamin B6, membantu menjaga tekanan darah dan menjaga fungsi saraf yang sehat.</item>
+        <item>Brokoli mengandung vitamin C, K, dan serat, membantu dalam detoksifikasi tubuh dan kesehatan tulang.</item>
+        <item>Buncis mengandung serat larut dan protein, baik untuk kesehatan pencernaan dan menjaga berat badan.</item>
+        <item>Wortel kaya akan beta-karoten dan serat, baik untuk penglihatan dan menjaga kulit sehat.</item>
+        <item>Roti gandum adalah sumber karbohidrat kompleks dan serat, membantu dalam energi stabil dan kesehatan pencernaan.</item>
+        <item>Alpukat mengandung lemak sehat dan serat, baik untuk jantung dan mengatur gula darah.</item>
+        <item>Minyak zaitun mengandung lemak tak jenuh ganda, antioksidan, dan antiinflamasi alami, baik untuk jantung dan kulit.</item>
+        <item>Salmon adalah sumber protein tinggi dan omega-3, penting untuk kesehatan jantung, otak, dan sistem kekebalan tubuh.</item>
+        <item>Biji kenari dan rami kaya akan protein, serat, dan lemak sehat, baik untuk kesehatan jantung dan otak.</item>
+        <item>Air mineral penting untuk hidrasi tubuh dan menjaga keseimbangan cairan dalam tubuh.</item>
+        <item>Tahu adalah sumber protein nabati rendah lemak, baik untuk vegetarian dan pengontrol berat badan.</item>
+        <item>Tempe, fermentasi kedelai yang mengandung protein tinggi dan probiotik, baik untuk pencernaan dan kesehatan usus.</item>
+        <item>Ubi mengandung karbohidrat kompleks dan serat, baik untuk energi stabil dan kesehatan pencernaan.</item>
+        <item>Pepaya mengandung vitamin C, serat, dan enzim pencernaan, baik untuk pencernaan dan kulit yang sehat.</item>
+        <item>Jagung mengandung serat, vitamin, dan mineral, baik untuk energi dan kesehatan pencernaan.</item>
+        <item>Anggur mengandung antioksidan dan vitamin C, baik untuk kesehatan jantung dan menurunkan risiko penyakit.</item>
+        <item>Semangka rendah kalori dan mengandung banyak air, baik untuk hidrasi dan keseimbangan elektrolit tubuh.</item>
+        <item>Timun rendah kalori, tinggi air, dan mengandung serat, baik untuk hidrasi dan menjaga berat badan.</item>
+        <item>Kol rendah kalori dan mengandung serat, baik untuk pencernaan dan kesehatan jantung.</item>
+        <item>Mangga mengandung vitamin C dan serat, baik untuk sistem kekebalan tubuh dan pencernaan yang sehat.</item>
     </string-array>
 
     <!-- Kalori Array -->
@@ -304,9 +297,9 @@
         <item>250 kalori per 100g</item>
         <item>239 kalori per 100g</item>
         <item>372 kalori per 100g</item>
-        <item>143 kalori per 100g</item>
         <item>42 kalori per 100g</item>
         <item>45 kalori per 100g</item>
+        <item>143 kalori per 100g</item>
         <item>205 kalori per 100g</item>
         <item>553 kalori per 100g</item>
         <item>123 kalori per 100g</item>
@@ -337,40 +330,42 @@
 
     <!-- Protein Array -->
     <string-array name="proteinkonsumsi_array">
-        <item>23.5g protein per 100g</item>
-        <item>26g protein per 100g</item>
-        <item>25g protein per 100g</item>
-        <item>9.1g protein per 100g</item>
-        <item>12.6g protein per 100g</item>
-        <item>3.4g protein per 100g</item>
-        <item>0.7g protein per 100g</item>
-        <item>18g protein per 100g</item>
-        <item>18.2g protein per 100g</item>
-        <item>7.5g protein per 100g</item>
-        <item>2.9g protein per 100g</item>
-        <item>1.8g protein per 100g</item>
-        <item>0.3g protein per 100g</item>
-        <item>1.1g protein per 100g</item>
-        <item>2.8g protein per 100g</item>
-        <item>2g protein per 100g</item>
-        <item>0.8g protein per 100g</item>
-        <item>8.5g protein per 100g</item>
-        <item>2g protein per 100g</item>
-        <item>0g protein per 100g</item>
-        <item>20g protein per 100g</item>
-        <item>18g protein per 100g</item>
-        <item>0g protein per 100g</item>
-        <item>8g protein per 100g</item>
-        <item>18.5g protein per 100g</item>
-        <item>1.6g protein per 100g</item>
-        <item>0.5g protein per 100g</item>
-        <item>2.7g protein per 100g</item>
-        <item>0.7g protein per 100g</item>
-        <item>0.6g protein per 100g</item>
-        <item>0.7g protein per 100g</item>
-        <item>1.3g protein per 100g</item>
-        <item>0.8g protein per 100g</item>
+        <item>23.3g per 100g</item>
+        <item>26.1g per 100g</item>
+        <item>27g per 100g</item>
+        <item>13g per 100g</item>
+        <item>3.6g per 100g</item>
+        <item>3.4g per 100g</item>
+        <item>12.6g per 100g</item>
+        <item>19g per 100g</item>
+        <item>18.2g per 100g</item>
+        <item>2.6g per 100g</item>
+        <item>2.9g per 100g</item>
+        <item>1.8g per 100g</item>
+        <item>0.3g per 100g</item>
+        <item>1.1g per 100g</item>
+        <item>2.8g per 100g</item>
+        <item>1.8g per 100g</item>
+        <item>0.9g per 100g</item>
+        <item>8.9g per 100g</item>
+        <item>2g per 100g</item>
+        <item>0g per 100g</item>
+        <item>20.4g per 100g</item>
+        <item>15.2g per 100g</item>
+        <item>0g per 100g</item>
+        <item>8.1g per 100g</item>
+        <item>19g per 100g</item>
+        <item>1.6g per 100g</item>
+        <item>0.5g per 100g</item>
+        <item>3.2g per 100g</item>
+        <item>0.7g per 100g</item>
+        <item>0.6g per 100g</item>
+        <item>0.7g per 100g</item>
+        <item>1.3g per 100g</item>
+        <item>0.8g per 100g</item>
+        <item>0.8g per 100g</item>
     </string-array>
+
 
     //Pemanasan
     <string-array name="gambarpemanasan_array">

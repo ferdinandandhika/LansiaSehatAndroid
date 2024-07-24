@@ -31,7 +31,7 @@ class TutorialActivity : AppCompatActivity() {
         TabLayoutMediator(binding.pageIndicator, mViewPager) { _, _ -> }.attach()
         binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
-                if (position == 12) {
+                if (position == 18) {
                     btnNextStep.visibility = View.GONE
                     textEnd.visibility = View.VISIBLE
                 } else {

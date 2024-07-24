@@ -49,7 +49,6 @@ class RencanaActivity : AppCompatActivity() {
         dateEditText.setOnClickListener { showDatePickerDialog() }
         timeEditText.setOnClickListener { showTimePickerDialog() }
 
-        // Set up the spinner with the category array
         ArrayAdapter.createFromResource(
             this,
             R.array.category_array,
@@ -59,7 +58,6 @@ class RencanaActivity : AppCompatActivity() {
             categorySpinner.adapter = adapter
         }
 
-        // Check if we are updating an existing task
         val todo = intent.getParcelableExtra<Todo>("todo")
         if (todo != null) {
             todoId = todo.id
@@ -128,7 +126,6 @@ class RencanaActivity : AppCompatActivity() {
             if (alarmManager.canScheduleExactAlarms()) {
                 alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, pendingIntent)
             } else {
-                // Tampilkan pesan atau minta izin dari pengguna
             }
         } else {
             alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, pendingIntent)
@@ -143,10 +140,37 @@ class RencanaActivity : AppCompatActivity() {
         val category = categorySpinner.selectedItem.toString()
 
         // Validasi input
-        if (title.isEmpty() || description.isEmpty() || date.isEmpty() || time.isEmpty()) {
-            // Tampilkan pesan kesalahan
+        if (title.isEmpty() || title.length > 20) {
             runOnUiThread {
-                Toast.makeText(this@RencanaActivity, "Semua kolom harus diisi", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@RencanaActivity, "Judul harus diisi dan kurang dari 20 karakter", Toast.LENGTH_SHORT).show()
+            }
+            return
+        }
+
+        if (description.isEmpty() || description.length > 50) {
+            runOnUiThread {
+                Toast.makeText(this@RencanaActivity, "Deskripsi harus diisi dan kurang dari 50 karakter", Toast.LENGTH_SHORT).show()
+            }
+            return
+        }
+
+        if (date.isEmpty()) {
+            runOnUiThread {
+                Toast.makeText(this@RencanaActivity, "Tanggal harus diisi", Toast.LENGTH_SHORT).show()
+            }
+            return
+        }
+
+        if (time.isEmpty()) {
+            runOnUiThread {
+                Toast.makeText(this@RencanaActivity, "Waktu harus diisi", Toast.LENGTH_SHORT).show()
+            }
+            return
+        }
+
+        if (category.isEmpty()) {
+            runOnUiThread {
+                Toast.makeText(this@RencanaActivity, "Kategori harus diisi", Toast.LENGTH_SHORT).show()
             }
             return
         }

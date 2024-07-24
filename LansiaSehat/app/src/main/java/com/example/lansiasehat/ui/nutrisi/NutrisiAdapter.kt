@@ -5,8 +5,6 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Filter
-import android.widget.Filterable
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -16,7 +14,7 @@ class NutrisiAdapter(
     private val context: Context,
     private val gambarNutrisi: IntArray,
     private val judulNutrisi: Array<String>
-) : RecyclerView.Adapter<NutrisiAdapter.NutrisiViewHolder>(), Filterable {
+) : RecyclerView.Adapter<NutrisiAdapter.NutrisiViewHolder>() {
 
     private var filteredGambarNutrisi: IntArray = gambarNutrisi
     private var filteredJudulNutrisi: Array<String> = judulNutrisi
@@ -39,39 +37,6 @@ class NutrisiAdapter(
     }
 
     override fun getItemCount(): Int = filteredGambarNutrisi.size
-
-    override fun getFilter(): Filter {
-        return object : Filter() {
-            override fun performFiltering(constraint: CharSequence?): FilterResults {
-                val query = constraint?.toString()?.toLowerCase()?.trim()
-                val filterResults = FilterResults()
-
-                if (query.isNullOrEmpty()) {
-                    filterResults.values = Pair(gambarNutrisi, judulNutrisi)
-                } else {
-                    val filteredList = judulNutrisi.withIndex().filter {
-                        it.value.toLowerCase().contains(query)
-                    }.map {
-                        Pair(gambarNutrisi[it.index], it.value)
-                    }
-
-                    filterResults.values = Pair(
-                        filteredList.map { it.first }.toIntArray(),
-                        filteredList.map { it.second }.toTypedArray()
-                    )
-                }
-
-                return filterResults
-            }
-
-            override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
-                val (filteredGambar, filteredJudul) = results?.values as Pair<IntArray, Array<String>>
-                filteredGambarNutrisi = filteredGambar
-                filteredJudulNutrisi = filteredJudul
-                notifyDataSetChanged()
-            }
-        }
-    }
 
     class NutrisiViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.detail_image_view)

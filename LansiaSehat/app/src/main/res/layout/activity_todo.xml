@@ -67,6 +67,7 @@
         android:inputType="textCapWords"
         android:padding="16dp"
         android:paddingEnd="8dp"
+        android:maxLength="20"
          />
 
     <TextView
@@ -93,7 +94,8 @@
         android:fontFamily="@font/poppins_semibold"
         android:textColorHint="#8A8A8A"
         android:textSize="18sp"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:maxLength="50"/>
 
     <TextView
         android:layout_width="wrap_content"

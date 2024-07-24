@@ -13,23 +13,28 @@ class TutorialViewPagerAdapter(
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
-            0 -> TutorialFragment.newInstance(R.drawable.tutor1)
-            1 -> TutorialFragment.newInstance(R.drawable.tutor2)
-            2 -> TutorialFragment.newInstance(R.drawable.tutor3)
-            3 -> TutorialFragment.newInstance(R.drawable.tutor4)
-            4 -> TutorialFragment.newInstance(R.drawable.tutor5)
-            5 -> TutorialFragment.newInstance(R.drawable.tutor6)
-            6 -> TutorialFragment.newInstance(R.drawable.tutor7)
-            7 -> TutorialFragment.newInstance(R.drawable.tutor8)
-            8 -> TutorialFragment.newInstance(R.drawable.tutor9)
-            9 -> TutorialFragment.newInstance(R.drawable.tutor10)
-            10 -> TutorialFragment.newInstance(R.drawable.tutor11)
-            11 -> TutorialFragment.newInstance(R.drawable.tutor12)
+            0 -> TutorialFragment.newInstance(R.drawable.tutor0)
+            1 -> TutorialFragment.newInstance(R.drawable.info1)
+            2 -> TutorialFragment.newInstance(R.drawable.info2)
+            3 -> TutorialFragment.newInstance(R.drawable.info3)
+            4 -> TutorialFragment.newInstance(R.drawable.info4)
+            5 -> TutorialFragment.newInstance(R.drawable.tutor1)
+            6 -> TutorialFragment.newInstance(R.drawable.tutor2)
+            7 -> TutorialFragment.newInstance(R.drawable.tutor3)
+            8 -> TutorialFragment.newInstance(R.drawable.tutor4)
+            9 -> TutorialFragment.newInstance(R.drawable.tutor5)
+            10 -> TutorialFragment.newInstance(R.drawable.tutor6)
+            11 -> TutorialFragment.newInstance(R.drawable.tutor7)
+            12 -> TutorialFragment.newInstance(R.drawable.tutor8)
+            13 -> TutorialFragment.newInstance(R.drawable.tutor9)
+            14 -> TutorialFragment.newInstance(R.drawable.tutor10)
+            15 -> TutorialFragment.newInstance(R.drawable.tutor11)
+            17 -> TutorialFragment.newInstance(R.drawable.tutor12)
             else -> TutorialFragment.newInstance(R.drawable.tutor13)
         }
     }
 
     override fun getItemCount(): Int {
-        return 13
+        return 19
     }
 }

@@ -24,24 +24,27 @@ class DetailKonsumsiActivity : AppCompatActivity() {
 
         if (konsumsiId != -1) {
             val imageArray = resources.obtainTypedArray(R.array.gambarkonsumsi_array)
+            val judulArray = resources.getStringArray(R.array.judulkonsumsi_array)
             val descriptionArray = resources.getStringArray(R.array.deskripsikonsumsi_array)
             val kaloriArray = resources.getStringArray(R.array.kalorikonsumsi_array)
             val proteinArray = resources.getStringArray(R.array.proteinkonsumsi_array)
-            val judulArray = resources.getStringArray(R.array.judulkonsumsi_array)
+
 
             val imageResId = imageArray.getResourceId(konsumsiId, -1)
+            val judul = judulArray[konsumsiId]
             val description = descriptionArray[konsumsiId]
             val kalori = kaloriArray[konsumsiId]
             val protein = proteinArray[konsumsiId]
-            val judul = judulArray[konsumsiId]
+
 
             imageArray.recycle()
 
             imageView.setImageResource(imageResId)
+            judulView.text = judul
             descriptionView.text = description
             kaloriView.text = kalori
             proteinView.text = protein
-            judulView.text = judul
+
         }
 
         val backButton = findViewById<ImageView>(R.id.back_button)

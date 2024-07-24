@@ -28,10 +28,10 @@ class SplashActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             if (isFirstRun) {
                 sharedPreferences.edit().putBoolean("isFirstRun", false).apply()
-                // Start PagerActivity
+
                 startActivity(Intent(this, PagerActivity::class.java))
             } else {
-                // Start MainActivity
+
                 startActivity(Intent(this, MainActivity::class.java))
             }
             finish()

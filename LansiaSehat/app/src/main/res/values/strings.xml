@@ -188,7 +188,7 @@
         <item>@drawable/susu</item>
         <item>@drawable/jusjeruk</item>
         <item>@drawable/egg</item>
-        <item>@drawable/ikan</item>
+        <item>@drawable/ikan1</item>
         <item>@drawable/kacang</item>
         <item>@drawable/berasmerah</item>
         <item>@drawable/bayam</item>
@@ -201,8 +201,8 @@
         <item>@drawable/roti</item>
         <item>@drawable/alpukat</item>
         <item>@drawable/zaitun</item>
-        <item>@drawable/ikan</item>
-        <item>@drawable/kacang</item>
+        <item>@drawable/ikan2</item>
+        <item>@drawable/kacang1</item>
         <item>@drawable/mineral</item>
         <item>@drawable/tahu</item>
         <item>@drawable/tempe</item>
@@ -215,7 +215,6 @@
         <item>@drawable/kol</item>
         <item>@drawable/mangga</item>
     </string-array>
-
     //Konsumsi nama
     <!-- Judul Array -->
     <string-array name="judulkonsumsi_array">
